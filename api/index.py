@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder="./")
 todo_list =[]
 @app.route("/")
 def home():
-    return render_template("index.html",todos=todo_list)
+    return render_template("todo.html",todos=todo_list)
 
 @app.route('/add', methods=['POST'])
 def add():
